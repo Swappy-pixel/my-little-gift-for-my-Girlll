@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>A Birthday Surprise 🧸</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav id="dots" aria-label="Progress"></nav>
+<button id="mute" class="icon" hidden aria-label="Toggle music">🔇</button>
+<main>
+  <!-- 1 Welcome -->
+  <section class="step" id="s1"><div class="in">
+    <div class="teddy big" data-wave="1" data-hold="💖"></div>
+    <h1 data-c="texts.hello"></h1><p data-c="texts.hint"></p><p data-c="texts.ready"></p>
+    <button class="btn" data-next>Let's Begin 💖</button>
+  </div></section>
+  <!-- 2 Intro -->
+  <section class="step" id="s2"><div class="in">
+    <div class="teddy" data-hold="🎂"></div>
+    <p id="d1" class="type"></p><h2 id="d2" class="type"></h2>
+    <button id="b2" class="btn rv" data-next>Continue 🧸</button>
+  </div></section>
+  <!-- 3 Cake -->
+  <section class="step" id="s3"><div class="in">
+    <p data-c="texts.cake"></p>
+    <div class="cake" aria-hidden="true"><div class="candles"><b class="candle"><i class="flame"></i></b><b class="candle"><i class="flame"></i></b><b class="candle"><i class="flame"></i></b></div><div class="c2"></div><div class="c1"></div></div>
+    <h2 id="hb" class="rv" data-c="texts.hb"></h2>
+    <div class="teddy pair mid" id="t3" data-hold="🎉" data-couple data-mode="hug"></div>
+    <div id="wait" class="rv"><p data-c="texts.wait"></p><button class="btn" data-next>There's More... 👀</button></div>
+  </div></section>
+  <!-- 4 Envelope -->
+  <section class="step" id="s4"><div class="in">
+    <p data-c="texts.envelope"></p>
+    <div class="env" id="env">
+      <div class="back"></div><div class="mini"><span data-c="texts.to"></span></div>
+      <div class="front"></div><div class="flap"></div><span class="seal">💗</span>
+      <div class="teddy sm et" data-hold=""></div>
+    </div>
+    <button id="b4" class="btn">Open Your Letter 💖</button>
+  </div></section>
+  <!-- 5 Letter -->
+  <section class="step" id="s5"><div class="in">
+    <article class="paper"><div class="scroll" id="scroll"></div>
+      <div class="foot"><p data-c="texts.readQ"></p><button class="btn" data-next>Yes, I Did 🥹</button></div>
+    </article>
+  </div></section>
+  <!-- 6 Memories -->
+  <section class="step" id="s6"><div class="in">
+    <h2 data-c="texts.memTitle"></h2>
+    <div class="viewport" id="vp"><div class="track" id="track"></div></div>
+    <div class="bar"><button class="nav" id="prv" aria-label="Previous memory">‹</button><span id="count" aria-live="polite"></span><button class="nav" id="nxt" aria-label="Next memory">›</button></div>
+    <div class="thumbs" id="thumbs"></div>
+    <div id="memEnd" class="rv"><p data-c="texts.memEnd"></p><p data-c="texts.memEnd2"></p><button class="btn" data-next>One Last Surprise ✨</button></div>
+  </div></section>
+  <!-- 7 Final + ending -->
+  <section class="step" id="s7"><div class="in">
+    <div class="teddy pair" id="t7" data-hold="❤️" data-wave="1" data-couple data-mode="hug"></div>
+    <p id="f1" class="rv" data-c="texts.again"></p>
+    <h1 id="f2" class="rv" data-c="texts.hbFinal"></h1>
+    <p id="f3" class="rv glass"></p>
+    <div id="f4" class="rv glass"><p data-c="texts.madeWith"></p><p data-c="texts.bye"></p><button class="btn" data-replay>Experience It Again 🔄</button></div>
+  </div></section>
+</main>
+<div id="lb" role="dialog" aria-label="Photo viewer"><img alt=""></div>
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
